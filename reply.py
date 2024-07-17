@@ -58,7 +58,7 @@ def reply(incoming_text, outgoing_msg_txt):
             response = requests.post(
                 url="https://openrouter.ai/api/v1/chat/completions",
                 headers={
-                    "Authorization": f"Bearer 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"},
+                    "Authorization": f"Bearer <API KEY HERE>"},
                 data=json.dumps({
                     "model": "meta-llama/llama-3-70b-instruct:nitro", # best
                     "messages": [
